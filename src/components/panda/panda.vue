@@ -6,8 +6,10 @@
         <footer id="footer">
             <ul>
                  <li>
+
                  	  <span class="iconfont icon-shouye"></span>
                      <router-link to="">首页</router-link>
+
                  </li>
                  <li>
                  	  <span class="iconfont icon-fenlei"></span>
@@ -28,5 +30,7 @@
 
 <script type="text/javascript">
     import '../../style/panda.scss';
+
+    export default {};
 </script>
 

@@ -1,0 +1,134 @@
+.home_men{
+    background-color: #f5f5f5;
+    .men_header{
+        background-color:#fff;
+        .top{
+            line-height:80px;
+            text-align:center;
+            height: 80px;
+            .line{
+                height: 2px;
+                background-color: #fdde4a;
+                width: 12%;
+                display: inline-block;
+                margin-bottom: 3px;
+            }
+            .center{
+                color: hsla(21,8%,49%,.7);
+                .before{
+                    width: 0;
+                    height: 0;
+                    border: 6px solid #fdde4a;
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    box-sizing: border-box;
+                    margin-top: -6px;margin-right:30px;
+                }
+                .after{
+                    width: 0;
+                    height: 0;
+                    border: 6px solid #fdde4a;
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    box-sizing: border-box;
+                    margin-top: -6px;margin-left:30px;                  
+                }
+            }
+        }
+        .center{
+            .list1{
+                overflow:hidden;
+                a{
+                    color:#000;
+                    text-decoration:none;
+                    text-align:center;
+                    float:left;
+                    width: 180px;
+                    height: 150px;
+                    margin-bottom:10px;
+                    img{
+                        margin:0 auto;
+                        width: 96px;height: 96px;
+                    }
+                    span{
+                        line-height:20px;
+                        height:20px;
+                    }
+                }
+            }
+        }
+        .bottom{
+            background-color:#f5f5f5;
+            line-height:80px;
+            text-align:center;
+            height: 80px;
+            .line{
+                height: 2px;
+                background-color: #fdde4a;
+                width: 12%;
+                display: inline-block;
+                margin-bottom: 3px;
+            }
+            .center{
+                color: hsla(21,8%,49%,.7);
+                .before{
+                    width: 0;
+                    height: 0;
+                    border: 6px solid #fdde4a;
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    box-sizing: border-box;
+                    margin-top: -6px;margin-right:30px;
+                }
+                .after{
+                    width: 0;
+                    height: 0;
+                    border: 6px solid #fdde4a;
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    box-sizing: border-box;
+                    margin-top: -6px;margin-left:30px;                  
+                }
+            }
+        }
+    }
+    .men_main{
+        ul{
+            overflow:hidden;
+            li{
+                float:left;
+                width: 49%;
+                height::560px;
+                background:#fff;
+                a{
+                    color:#877a73;
+                    text-decoration:none;
+                    font-size:20px;
+                    img{width: 100%;}
+                    p{  
+                        margin-bottom:70px;
+                        img{width: 45px;display:inline-block;}
+                    }
+                    .price{
+                        color:red;
+                        display:inline-block;
+                        margin-right:10px;
+                        span:nth-of-type(1){
+                            font-size:40px;
+                        }
+                    }
+                }
+                    
+            }
+            li:nth-child(2n){
+                margin-left:5px;
+                margin-bottom:10px;
+            }
+            li:nth-child(2n-1){
+                margin-right:5px;
+                margin-bottom:10px;
+            }
+            
+        }
+    }
+}
