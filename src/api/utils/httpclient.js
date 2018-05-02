@@ -1,13 +1,6 @@
-/* 
-* @Author: Marte
-* @Date:   2018-04-28 20:05:07
-* @Last Modified by:   Marte
-* @Last Modified time: 2018-04-28 20:07:01
-*/
 import axios from 'axios'
-import router from '../router/router'
+import router from '../router'
 const baseUrl = 'http://localhost:66/'
-
 let filterUrl = (_url) => {
     if(_url && _url.startsWith('http')){
         return _url;
@@ -16,7 +9,6 @@ let filterUrl = (_url) => {
 }
 export default {
     get(_url, _params = {}){
-    	
         return new Promise((resolve, reject) => {
             axios({
                 url:filterUrl(_url),
@@ -58,7 +50,7 @@ export default {
                 if(!res.data.status && res.data.message == "unauth"){
                     router.push({name:'login'});
                     return false;
-                }               
+                }           
                 resolve(res.data);
             }).catch(error => {
                 reject(error)

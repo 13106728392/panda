@@ -15,7 +15,7 @@
                  </li>
                  <li>
                  	  <span class="iconfont icon-gouwucheman"></span>
-                     <router-link to="">购物车</router-link>
+                     <router-link to="/car">购物车</router-link>
                  </li>
                  <li>
                  	   <span class="iconfont icon-ren"></span>

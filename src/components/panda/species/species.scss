@@ -1,7 +1,7 @@
 #panda_species{
 // background-color: lemonchiffon;
    .species_top{
-       height:150px;
+       height:2rem;
        width: 100%;
        background-color: #FDE25C;
    }
@@ -9,14 +9,14 @@
        float: left;
        top: 150px;
        box-sizing: border-box;
-       width: 246px;
+       width: 30%;
         height: 1075px;
        border-right:1px solid #D6D6D6;
        
       ul{
           height: 1019px;
           overflow-y: auto;
-          a{
+          span{
               display: inline-block;
               height: 150px;
               width: 246px;
@@ -26,7 +26,7 @@
               font-size: 34px;
               line-height: 150px;
           }
-          a:hover{
+          span:hover{
              border-left: 10px solid #FCCE21;
              color: #E4D82C;
              text-decoration: none;
@@ -37,9 +37,9 @@
    .species_right{
        float: right;
        margin-top: 75px;
-       width: 500px;
+       width: 70%;
        height: 1005px;
-       background-color: cornflowerblue;
+//     background-color: cornflowerblue;
    }
     
     

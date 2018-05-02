@@ -15,10 +15,9 @@ import toSendComponent from '../components/order/toSend/toSend.vue'
 import toReceiveComponent from '../components/order/toReceive/toReceive.vue'
 //分类组件
 import speciesComponent from '../components/panda/species/species.vue'
-import speciesTab1 from '../components/panda/species/tab/tab1.vue'
-import speciesTab2 from '../components/panda/species/tab/tab2.vue'
-import speciesTab3 from '../components/panda/species/tab/tab3.vue'
-import speciesTab4 from '../components/panda/species/tab/tab4.vue'
+import speciesTab from '../components/panda/species/tab/tab.vue'
+//购物车组件
+import carComponent from '../components/panda/car/car.vue'
 
 
 const router = new VueRouter({
@@ -33,15 +32,16 @@ const router = new VueRouter({
             {path:'/toSend', component: toSendComponent, name: 'toSend'},
             {path:'/toReceive', component: toReceiveComponent, name: 'toReceive'}
         ]},
-        //主组件
+        //主组件路由
          {path:'/', component: pandaComponent, name: 'panda',children:[
             {path:'owner', component: ownerComponent, name: 'owner'},
             {path:'species',component:speciesComponent,name:'species',children:[
-            	{path:'tab1',component:speciesTab1,name:'speciesTab1'},
-            	{path:'tab2',component:speciesTab2,name:'speciesTab2'},
-            	{path:'tab3',component:speciesTab3,name:'speciesTab3'},
-            	{path:'tab4',component:speciesTab4,name:'speciesTab4'},
-            ]}
+            	{path:'/tab/:tabnum',component:speciesTab,name:'speciesTab'},
+            ]},
+             {path:'car', component: carComponent, name: 'car'},
+            
+            
+            
         ] }
 
     ]

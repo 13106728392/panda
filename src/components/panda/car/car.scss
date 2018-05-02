@@ -1,0 +1,145 @@
+.car_top {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.5rem;
+    background-color: #FDE25C;
+    span {
+        position: absolute;
+        right: 0;
+        display: inlne-block;
+        color: firebrick;
+        font-size: 0.4rem;
+    }
+}
+
+
+
+
+
+
+.car_main{
+    position: fixed;
+    width: 100%;
+    background-color: darkgray;
+    height: 74%;
+    top: 10%;
+    overflow: auto;
+    
+   
+    ul{
+        li{
+            position: relative;
+           background-color:white;
+            height: 150px;
+            box-sizing: border-box;
+            padding: 9px ;
+            margin-bottom: 10px;
+            
+          
+           input{
+               display: inline-block;
+               float: left;
+               width: 30px;
+               margin-top: 20px;
+               height: 30px;
+               margin-right: 10px;
+           }
+            img{
+                 display: inline-block;
+                 float: left;
+                 margin-right: 25px;    
+                height: 90px;
+            }
+            p{
+                width: 400px;
+                display: inline-block;
+                float: left;
+            }
+            h3{
+                position: absolute;
+                left: 160px;
+                font-size: 25px;
+                top: 72px;
+                color: gray;
+            }
+            
+            h4{
+               position: absolute;
+               left: 160px;
+               top: 110px;
+               font-size:25px;
+               color: red;
+            }
+            span{
+                position: absolute;
+                right:50px;
+                font-size: 35px;
+                top: 50px;
+            }
+            
+            
+            
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.car_bottom {
+    position: fixed;
+    padding-left: 15px;
+    box-sizing: border-box;
+    bottom: 1.266666rem;
+    height: 9%;
+    width: 100%;
+    line-height: 1.5rem;
+    background-color: gainsboro;
+    h2 {
+        display: inline-block;
+        float: left;
+        input {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .car_bottom_right {
+        display: inline-block;
+        float: right;
+        height: 9%;
+        font-size: 35px;
+        line-height: 1.5rem;
+        a {
+            display: inline-block;
+            float: right;
+            text-align: center;
+            width: 200px;
+            color: white;
+            background-color: #FBCF2A;
+            height: 1.5rem;
+        }
+        span{
+            color: red;
+        }
+    }
+}
