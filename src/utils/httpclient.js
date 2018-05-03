@@ -6,7 +6,7 @@
 */
 import axios from 'axios'
 import router from '../router/router'
-const baseUrl = 'http://localhost:66/'
+const baseUrl = 'http://10.3.133.25:66/'
 
 let filterUrl = (_url) => {
     if(_url && _url.startsWith('http')){
@@ -16,7 +16,7 @@ let filterUrl = (_url) => {
 }
 export default {
     get(_url, _params = {}){
-    	
+    	console.log(_params)
         return new Promise((resolve, reject) => {
             axios({
                 url:filterUrl(_url),

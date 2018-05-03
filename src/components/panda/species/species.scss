@@ -1,49 +1,71 @@
-#panda_species{
-// background-color: lemonchiffon;
-   .species_top{
-       height:2rem;
-       width: 100%;
-       background-color: #FDE25C;
-   }
-   .species_left{
-       float: left;
-       top: 150px;
-       box-sizing: border-box;
-       width: 30%;
+#panda_species {
+    // background-color: lemonchiffon;
+    .species_top {
+        position: relative;
+        height: 2rem;
+        width: 100%;
+        background-color: #FDE25C;
+        .input_box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%)translateY(-50%);
+            width: 80%;
+            height: 0.8rem;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            .zoom {
+                position: absolute;
+                display: block;
+                width: 0.8rem;
+                height: 0.8rem;
+                background: url("../../../assets/zoom.jpg") no-repeat;
+                left: 5px;
+                top: 10px;
+            }
+            input {
+                position:absolute;
+                height: 0.8rem;
+                left: 10%;
+                border: none;
+                width: 78%;
+                font-size: 35px;
+            }
+        }
+    }
+    .species_left {
+        float: left;
+        top: 150px;
+        box-sizing: border-box;
+        width: 30%;
         height: 1075px;
-       border-right:1px solid #D6D6D6;
-       
-      ul{
-          height: 1019px;
-          overflow-y: auto;
-          span{
-              display: inline-block;
-              height: 150px;
-              width: 246px;
-              box-sizing: border-box;
-              color: #86827F;
-              text-align: center;
-              font-size: 34px;
-              line-height: 150px;
-          }
-          span:hover{
-             border-left: 10px solid #FCCE21;
-             color: #E4D82C;
-             text-decoration: none;
-          }
-      }
-   }
-   
-   .species_right{
-       float: right;
-       margin-top: 75px;
-       width: 70%;
-       height: 1005px;
-//     background-color: cornflowerblue;
-   }
-    
-    
-    
-    
-    
+        border-right: 1px solid #D6D6D6;
+        ul {
+            height: 1019px;
+            overflow-y: auto;
+            span {
+                display: inline-block;
+                height: 150px;
+                width: 246px;
+                box-sizing: border-box;
+                color: #86827F;
+                text-align: center;
+                font-size: 34px;
+                line-height: 150px;
+            }
+            span:hover {
+                border-left: 10px solid #FCCE21;
+                color: #E4D82C;
+                text-decoration: none;
+            }
+        }
+    }
+    .species_right {
+        float: right;
+        margin-top: 75px;
+        width: 70%;
+        height: 1005px;
+        //     background-color: cornflowerblue;
+    }
 }
